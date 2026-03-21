@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "An-Nahj Islamic Institute",
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         <Header></Header>
-        {children}
+        <div className="pt-28">{children}</div>
         <Footer></Footer>
       </body>
     </html>
