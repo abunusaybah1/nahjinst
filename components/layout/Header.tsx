@@ -16,7 +16,7 @@ const Header = () => {
         <Image
           src="/images/logo1trans.png"
           alt="Logo"
-          width={70}
+          width={50}
           height={50}
           className="cursor-pointer"
         />
@@ -42,6 +42,12 @@ const Header = () => {
             Programs
           </Link>
           <Link
+            href="/instructors"
+            className="hover:text-[#144710] hover:underline hover:scale-105 transition"
+          >
+            Instructors
+          </Link>
+          <Link
             href="/contact"
             className="hover:text-[#144710] hover:underline hover:scale-105 transition"
           >
@@ -52,14 +58,14 @@ const Header = () => {
         {/* CTA Button */}
         <Link
           href="/enroll"
-          className="hidden md:block bg-[#144727] text-[#ebe1d1] px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition"
+          className="hidden md:block bg-[#144727] text-[#ebe1d1] px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
         >
           Enroll
         </Link>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-3xl hover:text-[#144710] hover:scale-120 transition"
+          className="md:hidden text-3xl hover:text-[#144710] hover:scale-120 transition cursor-pointer"
           onClick={() => setOpen(!open)}
         >
           {open ? <IoClose /> : <HiMenuAlt3 />}
@@ -90,6 +96,13 @@ const Header = () => {
               className="hover:text-[#144710] hover:underline hover:scale-105 transition"
             >
               Programs
+            </Link>
+            <Link
+              onClick={() => setOpen(false)}
+              href="/instructors"
+              className="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >
+              Instructors
             </Link>
             <Link
               href="/contact"

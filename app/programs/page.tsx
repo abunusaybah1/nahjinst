@@ -1,9 +1,147 @@
-import React from 'react'
+"use client";
 
-const page = () => {
+import React from "react";
+import {
+  FaBookOpen,
+  FaQuran,
+  FaPenNib,
+  FaClock,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
+
+const ProgramsPage = () => {
+  const programs = [
+    {
+      title: "Abubakar Class",
+      icon: <FaQuran size={26} />,
+      description:
+        "Qur’an memorization, revision, and Tajweed for all levels of learners.",
+      schedule: [
+        "Memorization — Monday, Wednesday, Friday",
+        "Tajweed — Tuesday, Thursday",
+      ],
+    },
+    {
+      title: "Umar Class",
+      icon: <FaPenNib size={26} />,
+      description:
+        "Arabic letters, pronunciation, joining letters, and reading the Qur’an from scratch.",
+      schedule: ["Monday–Friday"],
+    },
+    {
+      title: "Uthman Class",
+      icon: <FaBookOpen size={26} />,
+      description:
+        "Arabic language using Duroos al-Lughah — grammar, vocabulary, and sentence construction.",
+      schedule: ["Monday–Friday"],
+    },
+    {
+      title: "Weekend Classes",
+      icon: <FaChalkboardTeacher size={26} />,
+      description:
+        "General weekend classes for all students covering foundational Islamic sciences.",
+      schedule: ["Saturday — Hadith", "Sunday — Fiqh"],
+    },
+  ];
+
   return (
-    <div>page</div>
-  )
-}
+    <div className="px-6 md:px-16 text-[#144727]">
+      {/* Header */}
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        Our Programs and Classes
+      </h1>
 
-export default page
+      <p className="text-[15.5px] md:w-2.5/3 leading-7 mb-10">
+        At An-Nahj Islamic Institute, our structured programs are designed to
+        help students learn Qur’an, Arabic, Hadith, and Fiqh with clarity and
+        discipline.
+      </p>
+
+      {/* Programs (FLEX) */}
+      <div className="flex flex-wrap gap-8 mb-10">
+        {programs.map((p, index) => (
+          <div
+            key={index}
+            className="bg-[#ebe1d1] p-6 rounded-xl shadow-md border border-[#d4c6b5] 
+                       hover:shadow-lg transition hover:-translate-y-1 
+                       flex flex-col w-full md:w-[47%] lg:w-[30%]"
+          >
+            {/* Icon + Title */}
+            <div className="flex items-center gap-3 mb-3">
+              <div className="bg-[#144727] text-[#ebe1d1] p-3 rounded-lg">
+                {p.icon}
+              </div>
+              <h2 className="text-xl font-semibold">{p.title}</h2>
+            </div>
+
+            {/* Description */}
+            <p className="text-[15px] leading-6 mb-4">{p.description}</p>
+
+            {/* Schedule */}
+            <h3 className="font-medium mb-2 text-[15px]">Schedule:</h3>
+            <ul className="list-disc pl-5 text-[14.5px] leading-6">
+              {p.schedule.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <hr className="border-[#144727]" />
+
+      {/* Bottom Sections — Flexbox */}
+      <div className="flex flex-wrap gap-8 mt-10">
+        {/* Class Timing */}
+        <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
+          <h2 className="text-2xl font-semibold mb-3">Class Timing</h2>
+          <p className="leading-7 text-[15.5px]">
+            All classes take place between <strong>Maghrib and 10pm WAT</strong>
+            , making them suitable for students, workers, and busy adults.
+          </p>
+          <br />
+          <h3 className="font-bold text-[16px]">Mode of learning:</h3>
+          <p className="leading-7 text-[15.5px]">
+            Some classes take place privately while some take place in groups.
+            All details will be communicated as due, in shā&apos; Allāh.
+          </p>
+        </div>
+
+        {/* Teaching Methodology */}
+        <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
+          <h2 className="text-2xl font-semibold mb-3">Teaching Methodology</h2>
+          <p className="leading-7 text-[15.5px] mb-3">
+            All our classes are conducted on WhatsApp and Telegram. All required
+            materials are shared with students throughout the program.
+          </p>
+
+          <h3 className="font-bold text-[16px] mb-2">Languages Used:</h3>
+          <ul className="list-disc pl-5 text-[15px] leading-6">
+            <li>English</li>
+            <li>Yoruba</li>
+            <li>Arabic</li>
+          </ul>
+        </div>
+
+        {/* Fees & Enrollment */}
+        <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
+          <h2 className="text-2xl font-semibold mb-3">Fees and Enrollment</h2>
+          <p className="leading-7 text-[15.5px] mb-4">
+            Classes are completely free. Students only pay a{" "}
+            <strong>₦3000 monthly commitment fee</strong>. This helps both
+            students and the institute stay disciplined and committed.
+          </p>
+
+          <h3 className="font-bold text-[16px]">Eligibility:</h3>
+          <p className="leading-7 text-[15.5px]">
+            Our classes are open to all age groups and academic levels. Students
+            will choose their preferred class, and a screening test may be
+            conducted to confirm their prior knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProgramsPage;

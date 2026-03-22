@@ -12,9 +12,9 @@ const Footer = () => {
           <Image
             src="/images/logolighttrans.png"
             alt="An-Nahj Logo"
-            width={60}
+            width={50}
             height={50}
-            className="mb-3 fill-[#ebe1d1]"
+            className="mb-3 fill-[#ebe1d1] cursor-pointer"
           />
           <h2 className="text-xl font-semibold mb-2">
             An-Nahj Islamic Institute
@@ -38,11 +38,11 @@ const Footer = () => {
             <Link href="/programs" className="hover:underline">
               Programs
             </Link>
+            <Link href="/instructors" className="hover:underline">
+              Instructors
+            </Link>
             <Link href="/contact" className="hover:underline">
               Contact
-            </Link>
-            <Link href="/enroll" className="hover:underline">
-              Enroll
             </Link>
           </ul>
         </div>
