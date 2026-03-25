@@ -1,19 +1,20 @@
 "use client";
 
+import Link from "next/dist/client/link";
 import Image from "next/image";
 import React from "react";
 
 const instructors = [
   {
     name: "Abu Nusaybah An-Nahjiy",
-    image: "/images/abunusaybah.png", // replace with actual image
+    image: "/images/abunusaybah.png",
     role: "Umar Class, Uthman Class & Abubakar Class (Tajweed)",
     description:
       "He has years of experience teaching Qur’an, tajweed, Arabic, hadith, and fiqh, both online and physically. By the permission of Allah, he is known for simplifying complex concepts and helping beginners grow steadily. Allahumma Baarik!",
   },
   {
     name: "Abu Haneefah",
-    image: "/images/instructor2.jpg", // replace with actual image
+    image: "/images/abuhaneefah.png",
     role: "Abubakar Class (Qur’an)",
     description:
       "An experienced and eloquent reciter of the Qur’an. By the permission of Allah, he is known for making the learning of the Qur’an easy and accessible for students. Allahumma Baarik!",
@@ -45,6 +46,7 @@ const InstructorsPage = () => {
                 src={inst.image}
                 alt={inst.name}
                 fill
+                loading="eager"
                 className="object-cover hover:scale-105 transition duration-500"
               />
             </div>
@@ -68,6 +70,20 @@ const InstructorsPage = () => {
           expand our reach and improve the learning experience. May Allah ease
           it.
         </p>
+      </div>
+
+      <div className="mt-10 mb-16 bg-[#ebe1d1] p-6 rounded-xl border border-[#d4c6b5] ">
+        <p className="text-[15.5px] leading-7 mb-6">
+          Ready to take the bold step to join our community of learners? Upon
+          joining An-Nahj Islamic Institute, you will be part of a supportive
+          learning environment dedicated to growing in knowledge and faith.
+        </p>
+        <Link
+          href="/enroll"
+          className="bg-[#144727] text-[#ebe1d1] py-2 px-3 rounded-md hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
+        >
+          Enroll Now
+        </Link>
       </div>
     </div>
   );

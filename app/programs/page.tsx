@@ -1,11 +1,11 @@
 "use client";
 
+import Link from "next/dist/client/link";
 import React from "react";
 import {
   FaBookOpen,
   FaQuran,
   FaPenNib,
-  FaClock,
   FaChalkboardTeacher,
 } from "react-icons/fa";
 
@@ -62,9 +62,7 @@ const ProgramsPage = () => {
         {programs.map((p, index) => (
           <div
             key={index}
-            className="bg-[#ebe1d1] p-6 rounded-xl shadow-md border border-[#d4c6b5] 
-                       hover:shadow-lg transition hover:-translate-y-1 
-                       flex flex-col w-full md:w-[47%] lg:w-[30%]"
+            className="bg-[#ebe1d1] p-6 rounded-xl shadow-md border border-[#d4c6b5] hover:shadow-lg transition hover:-translate-y-1 flex flex-col w-full md:w-[47%] lg:w-[30%]"
           >
             {/* Icon + Title */}
             <div className="flex items-center gap-3 mb-3">
@@ -87,8 +85,6 @@ const ProgramsPage = () => {
           </div>
         ))}
       </div>
-
-      <hr className="border-[#144727]" />
 
       {/* Bottom Sections — Flexbox */}
       <div className="flex flex-wrap gap-8 mt-10">
@@ -139,6 +135,20 @@ const ProgramsPage = () => {
             conducted to confirm their prior knowledge.
           </p>
         </div>
+      </div>
+
+      <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full mt-10">
+        <p className=" leading-7 text-[15.5px] mb-5">
+          Want to know the instructors that will be teaching you? We should know
+          that knowledge is a crucial part of our religion, and it is very
+          important to know from whom we will be taking it from.
+        </p>
+        <Link
+          href="/instructors"
+          className="bg-[#144727] text-[#ebe1d1] py-2 px-3 rounded-md hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
+        >
+          See instructors
+        </Link>
       </div>
     </div>
   );

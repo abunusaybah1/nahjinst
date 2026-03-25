@@ -97,7 +97,7 @@ const EnrollPage = () => {
               disabled={!canEnroll}
               onClick={() => {
                 window.open(
-                  `https://wa.me/2349015807937?text=${encodeURIComponent("As-salaamu alaykum! I want to enroll at An-Nahj Islamic Institute and I have gone through the website. The class I want to join is ________")}`,
+                  `https://wa.me/2349015807937?text=${encodeURIComponent("As-salaamu alaykum! \n \n I want to enroll at An-Nahj Islamic Institute and I have gone through the website. The class I want to join is ________")}`,
                   "_blank",
                 );
               }}

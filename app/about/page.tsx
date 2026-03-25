@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
+import Link from "next/dist/client/link";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -45,7 +46,7 @@ const AboutPage = () => {
         variants={fadeUp}
         initial="hidden"
         animate="show"
-        className=" p-6 rounded-xl border border-[#d4c6b5] bg-[#ebe1d1]"
+        className=" p-6 rounded-xl border border-[#d4c6b5] bg-[#ebe1d1] mb-10"
       >
         <h2 className="text-2xl font-semibold mb-5">
           What Makes An-Nahj Different?
@@ -96,6 +97,29 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
+      </motion.section>
+
+      {/* PROGRAMS SECTION */}
+      <motion.section
+        variants={fadeUp}
+        initial="hidden"
+        animate="show"
+        className="mb-10 leading-7 text-[15.5px] bg-[#ebe1d1] p-6 rounded-xl border border-[#d4c6b5]"
+      >
+        <h2 className="text-2xl font-semibold mb-5">Our Programs</h2>
+
+        <p className="mb-4">
+          At An-Nahj Islamic Institute, our structured programs are designed to
+          help students learn Qur’an, Arabic, Hadith, and Fiqh with clarity and
+          discipline.
+        </p>
+
+        <Link
+          href="/programs"
+          className="bg-[#144727] text-[#ebe1d1] py-2 px-3 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
+        >
+          Explore our programs
+        </Link>
       </motion.section>
     </div>
   );

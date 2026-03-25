@@ -18,6 +18,7 @@ const Header = () => {
           alt="Logo"
           width={50}
           height={50}
+          loading="eager"
           className="cursor-pointer"
         />
 
