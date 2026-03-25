@@ -10,7 +10,10 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full bg-[#ebe1d1] text-[#144727] py-3 shadow-sm z-1000">
+    <header
+      role="banner"
+      className="fixed top-0 w-full bg-[#ebe1d1] text-[#144727] py-3 shadow-sm z-1000"
+    >
       <div className="flex justify-between items-center px-6 md:px-10">
         {/* Logo */}
         <Image
@@ -23,7 +26,10 @@ const Header = () => {
         />
 
         {/* Desktop Links */}
-        <nav className="hidden md:flex gap-7 text-[15px]">
+        <nav
+          className="hidden md:flex gap-7 text-[15px]"
+          aria-label="Main navigation"
+        >
           <Link
             href="/"
             className="hover:text-[#144710] hover:underline hover:scale-105 transition"
@@ -76,7 +82,10 @@ const Header = () => {
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-[#ebe1d1] px-6 mt-3 pb-5 border-t border-[#144727] py-3">
-          <nav className="flex flex-col gap-4 text-[16px]">
+          <nav
+            className="flex flex-col gap-4 text-[16px]"
+            aria-label="Mobile navigation"
+          >
             <Link
               href="/"
               onClick={() => setOpen(false)}

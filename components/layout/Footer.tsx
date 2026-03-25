@@ -5,13 +5,16 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className=" w-full bg-[#144727] text-[#ebe1d1] pt-10 pb-6 mt-10">
+    <footer
+      role="contentinfo"
+      className=" w-full bg-[#144727] text-[#ebe1d1] pt-10 pb-6 mt-10"
+    >
       <div className="px-6 md:px-12 grid md:grid-cols-3 gap-10">
         {/* Logo + Intro */}
         <div>
           <Image
             src="/images/logolighttrans.png"
-            alt="An-Nahj Logo"
+            alt="Logo"
             width={50}
             height={50}
             className="mb-3 fill-[#ebe1d1] cursor-pointer"

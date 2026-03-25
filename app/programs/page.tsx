@@ -15,7 +15,7 @@ const ProgramsPage = () => {
       title: "Abubakar Class",
       icon: <FaQuran size={26} />,
       description:
-        "Qur’an memorization, revision, and Tajweed for all levels of learners.",
+        "Qur’an memorization, revision, and Tajweed for learners of all levels.",
       schedule: [
         "Memorization — Monday, Wednesday, Friday",
         "Tajweed — Tuesday, Thursday",
@@ -25,21 +25,21 @@ const ProgramsPage = () => {
       title: "Umar Class",
       icon: <FaPenNib size={26} />,
       description:
-        "Arabic letters, pronunciation, joining letters, and reading the Qur’an from scratch.",
+        "Learn Arabic letters, pronunciation, letter joining, and how to read the Qur’an from scratch.",
       schedule: ["Monday–Friday"],
     },
     {
       title: "Uthman Class",
       icon: <FaBookOpen size={26} />,
       description:
-        "Arabic language using Duroos al-Lughah — grammar, vocabulary, and sentence construction.",
+        "Arabic language instruction using Duroos al-Lughah, covering grammar, vocabulary, and sentence construction.",
       schedule: ["Monday–Friday"],
     },
     {
       title: "Weekend Classes",
       icon: <FaChalkboardTeacher size={26} />,
       description:
-        "General weekend classes for all students covering foundational Islamic sciences.",
+        "Weekend classes for all students, covering foundational Islamic sciences.",
       schedule: ["Saturday — Hadith", "Sunday — Fiqh"],
     },
   ];
@@ -52,9 +52,7 @@ const ProgramsPage = () => {
       </h1>
 
       <p className="text-[15.5px] md:w-2.5/3 leading-7 mb-10">
-        At An-Nahj Islamic Institute, our structured programs are designed to
-        help students learn Qur’an, Arabic, Hadith, and Fiqh with clarity and
-        discipline.
+        At An-Nahj Islamic Institute, our structured programs are designed to help students learn the Qur’an, Arabic, Hadith, and Fiqh with clarity and discipline.
       </p>
 
       {/* Programs (FLEX) */}
