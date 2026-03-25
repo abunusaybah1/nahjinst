@@ -19,6 +19,12 @@ const rules = [
   "Any student who leaves the institute or its community without approval will NOT be accepted back.",
 ];
 
+export const metadata = {
+  title: "Enroll | An-Nahj Islamic Institute",
+  description:
+    "Enroll at An-Nahj Islamic Institute to start your journey in learning the Qur’an, Arabic, Hadith, and Fiqh. Please read our enrollment rules and regulations before proceeding.",
+};
+
 const EnrollPage = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [timer, setTimer] = useState(80);

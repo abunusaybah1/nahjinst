@@ -1,0 +1,16 @@
+{
+  "name": "An-Nahj Islamic Institute",
+  "short_name": "An-Nahj Institute",
+  "description": "Structured Qur’an, Arabic, Hadith, and Fiqh programs for all learners.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ebe1d1",
+  "theme_color": "#144727",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

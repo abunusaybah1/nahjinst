@@ -16,6 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#144727" />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header></Header>
         <div className="pt-28">{children}</div>
