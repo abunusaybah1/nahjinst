@@ -3,11 +3,6 @@
 import React, { useState } from "react";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
-export const metadata = {
-  title: "Contact | An-Nahj Islamic Institute",
-  description: "Contact An-Nahj Islamic Institute for questions, enrollment, or support. Reach out via WhatsApp or our contact form. We are here to help you on your learning journey.",
-};
-
 const ContactPage = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");

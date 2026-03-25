@@ -14,17 +14,12 @@ const instructors = [
   },
   {
     name: "Abu Haneefah",
-    image: "/images/abuhaneefah.png",
+    image: "/imagges/abuhaneefah.png",
     role: "Abubakar Class (Qur’an)",
     description:
       "An experienced and eloquent reciter of the Qur’an. By the permission of Allah, he is known for making the learning of the Qur’an easy and accessible for students. Allahumma Baarik!",
   },
 ];
-
-export const metadata = {
-  title: "Instructors | An-Nahj Islamic Institute",
-  description: "Meet the instructors at An-Nahj Islamic Institute. Our teachers are dedicated to authentic Islamic education, making learning easy and beneficial for every student.",
-};
 
 const InstructorsPage = () => {
   return (

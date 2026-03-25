@@ -9,11 +9,6 @@ import {
   FaChalkboardTeacher,
 } from "react-icons/fa";
 
-export const metadata = {
-  title: "Programs & Classes | An-Nahj Islamic Institute",
-  description: "Explore our Qur’an, Arabic, Hadith, and Fiqh programs at An-Nahj Islamic Institute. Structured classes for all ages and levels, taught by experienced instructors.",
-};
-
 const ProgramsPage = () => {
   const programs = [
     {
@@ -57,7 +52,9 @@ const ProgramsPage = () => {
       </h1>
 
       <p className="text-[15.5px] md:w-2.5/3 leading-7 mb-10">
-        At An-Nahj Islamic Institute, our structured programs are designed to help students learn the Qur’an, Arabic, Hadith, and Fiqh with clarity and discipline.
+        At An-Nahj Islamic Institute, our structured programs are designed to
+        help students learn the Qur’an, Arabic, Hadith, and Fiqh with clarity
+        and discipline.
       </p>
 
       {/* Programs (FLEX) */}
