@@ -21,6 +21,11 @@ const instructors = [
   },
 ];
 
+export const metadata = {
+  title: "Instructors | An-Nahj Islamic Institute",
+  description: "Meet the instructors at An-Nahj Islamic Institute. Our teachers are dedicated to authentic Islamic education, making learning easy and beneficial for every student.",
+};
+
 const InstructorsPage = () => {
   return (
     <div className="px-6 md:px-16 text-[#144727]">

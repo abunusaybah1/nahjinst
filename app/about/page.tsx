@@ -9,6 +9,11 @@ const fadeUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
+export const metadata = {
+  title: "About | An-Nahj Islamic Institute",
+  description: "Learn about An-Nahj Islamic Institute, our mission, and our commitment to spreading beneficial Islamic knowledge through structured, accessible programs for all learners.",
+};
+
 const AboutPage = () => {
   return (
     <div className="px-6 md:px-16 text-[#144727]">
