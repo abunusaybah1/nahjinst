@@ -7,7 +7,7 @@ const ContactPage = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const phone = "2349015807937";
+  const phone = "2348164758649";
 
   const handleSend = () => {
     const text = `As-salaamu alaykum! My name is ${name || "________"}.\n\n${message || "I would like to make an enquiry about An-Nahj Islamic Institute."}`;
@@ -38,7 +38,7 @@ const ContactPage = () => {
             <span
               className="cursor-pointer "
               onClick={() => {
-                window.open("https://wa.me/2349015807937");
+                window.open("https://wa.me/2348164758649");
               }}
             >
               +234 901 580 7937

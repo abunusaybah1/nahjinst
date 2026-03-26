@@ -51,7 +51,7 @@ const AboutPage = () => {
 
         {/* Card 3 */}
         <div className="flex-1 min-w-62.5 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition">
-          <h3 className="text-lg font-bold mb-2">Authentic Manhaj</h3>
+          <h3 className="text-lg font-bold mb-2">Sound Creed & Manhaj</h3>
           <p className="text-[15px] leading-6">
             Curriculum based on Qur’an and Sunnah according to the Salaf,
             ensuring trusted knowledge.
@@ -62,7 +62,7 @@ const AboutPage = () => {
         <div className="flex-1 min-w-62.5 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition">
           <h3 className="text-lg font-bold mb-2">Fully Online</h3>
           <p className="text-[15px] leading-6">
-            Learn from anywhere through a seamless online learning structure.
+            Learn from any part of the world, anytime.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ const AboutPage = () => {
           <h3 className="text-lg font-bold mb-2">Discipline & Etiquettes</h3>
           <p className="text-[15px] leading-6">
             Built upon sincerity, discipline, taqwah, and proper Islamic
-            manners.
+            etiquettes.
           </p>
         </div>
       </div>

@@ -20,13 +20,13 @@ const EnrollClient = () => {
   ];
 
   const [showPopup, setShowPopup] = useState(false);
-  const [timer, setTimer] = useState(0);
+  const [timer, setTimer] = useState(80);
   const [canEnroll, setCanEnroll] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Show popup after 1 second
   useEffect(() => {
-    const t = setTimeout(() => setShowPopup(true), 1000);
+    const t = setTimeout(() => setShowPopup(true), 3000);
     return () => clearTimeout(t);
   }, []);
 
@@ -67,6 +67,7 @@ const EnrollClient = () => {
               Rules & Regulations
             </h2>
             <p className="text-center mb-4">Please read and understand!</p>
+            <hr className="mb-4 text-[#d4c6b5] h-0.5 bg-[#d4c6b5]" />
 
             {/* Scrollable Rules Box */}
             <div
@@ -79,6 +80,8 @@ const EnrollClient = () => {
               ))}
             </div>
 
+            <hr className="mt-4 text-[#d4c6b5] h-0.5 bg-[#d4c6b5]" />
+
             {/* Timer Note */}
             <p className="text-center mt-4 text-sm opacity-70">
               You can proceed after <span className="font-bold">{timer}s</span>{" "}
@@ -90,7 +93,7 @@ const EnrollClient = () => {
               disabled={!canEnroll}
               onClick={() => {
                 window.open(
-                  `https://wa.me/2349015807937?text=${encodeURIComponent("As-salaamu alaykum! \n \n I want to enroll at An-Nahj Islamic Institute and I have gone through the website. The class I want to join is ________")}`,
+                  `https://wa.me/2348164758649?text=${encodeURIComponent("As-salaamu alaykum! \n \n I want to enroll at An-Nahj Islamic Institute and I have gone through the website. The class I want to join is ________")}`,
                   "_blank",
                 );
               }}
