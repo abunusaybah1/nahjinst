@@ -14,7 +14,7 @@ const instructors = [
   },
   {
     name: "Abu Haneefah",
-    image: "/imagges/abuhaneefah.png",
+    image: "/images/abuhaneefah.png",
     role: "Abubakar Class (Qur’an)",
     description:
       "An experienced and eloquent reciter of the Qur’an. By the permission of Allah, he is known for making the learning of the Qur’an easy and accessible for students. Allahumma Baarik!",
