@@ -10,7 +10,7 @@ const instructors = [
     image: "/images/abunusaybah.png",
     role: "Umar Class, Uthman Class & Abubakar Class (Tajweed)",
     description:
-      "He has years of experience teaching Qur’an, tajweed, Arabic, hadith, and fiqh, virtually and physically. By the permission of Allah, he is known for simplifying complex concepts and helping beginners grow steadily. Allahumma Baarik!",
+      "He has years of experience teaching Qur’an, tajweed, Arabic, hadith, fiqh, Nahw, and Sarf, etc, virtually and physically. By the permission of Allah, he is known for simplifying complex concepts and helping beginners grow steadily. Allahumma Baarik!",
   },
   {
     name: "Abu Haneefah",

@@ -27,21 +27,22 @@ const ProgramsPage = () => {
       icon: <FaPenNib size={26} />,
       description:
         "Learn Arabic letters, pronunciation, letter joining, and how to read the Qur’an from scratch.",
-      schedule: ["Monday–Friday"],
+      schedule: ["Monday–Thursday"],
     },
     {
       title: "Uthman Class",
       icon: <FaBookOpen size={26} />,
-      description:
-        "Learn Arabic language using Duroos al-Lughah, covering grammar, vocabulary, and sentence construction.",
-      schedule: ["Monday–Friday"],
+      description: "Learn Arabic, Nahw, Sarf, and Ta'beer.",
+      schedule: [
+        "Monday (Arabic), Wednesday (Arabic), Friday (Nahw), Saturday (Sarf), and Sunday (Ta'beer)",
+      ],
     },
     {
       title: "Weekend Class",
       icon: <FaChalkboardTeacher size={26} />,
       description:
         "Weekend classes for all students, covering foundational Islamic sciences.",
-      schedule: ["Saturday — Hadith", "Sunday — Fiqh"],
+      schedule: ["Saturday — Hadith Memorization", "Sunday — Fiqh study"],
     },
     {
       title: "General Weekly Quizzes",
