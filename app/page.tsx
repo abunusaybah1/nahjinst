@@ -179,17 +179,17 @@ const LandingPage = () => {
           {instructorsPreview.map((inst, i) => (
             <div
               key={i}
-              className="flex flex-row gap-5 min-w-60 bg-white/60 rounded-xl border border-[#d4c6b5] hover:shadow-md transition justify-start overflow-hidden"
+              className="flex flex-row items-center gap-5 min-w-60 bg-white/60 rounded-xl border border-[#d4c6b5] hover:shadow-md transition justify-start overflow-hidden"
             >
               <Image
                 src={inst.image}
                 alt={inst.name}
                 width={150}
-                height={100}
+                height={200}
                 loading="eager"
-                className="min-h-20 object-cover shrink-0"
+                className="w-30 h-full min-h-35 object-cover shrink-0 self-stretch"
               />
-              <div className="p-6">
+              <div className="p-4">
                 <h3 className="font-semibold text-[16px] mb-0.5 flex flex-col">
                   {inst.name}
                 </h3>
