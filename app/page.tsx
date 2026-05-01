@@ -175,11 +175,11 @@ const LandingPage = () => {
           Knowledge is a crucial part of our deen — know from whom you take it.
         </p>
 
-        <div className="flex flex-wrap gap-6 sm:flex-row justify-start">
+        <div className="flex flex-wrap gap-6 ">
           {instructorsPreview.map((inst, i) => (
             <div
               key={i}
-              className="flex gap-5 min-w-60 bg-white/60 rounded-xl border border-[#d4c6b5] hover:shadow-md transition"
+              className="flex flex-row gap-5 min-w-60 bg-white/60 rounded-xl border border-[#d4c6b5] hover:shadow-md transition justify-start overflow-hidden"
             >
               <Image
                 src={inst.image}
@@ -187,7 +187,7 @@ const LandingPage = () => {
                 width={150}
                 height={100}
                 loading="eager"
-                className=" min-h-20"
+                className="min-h-20 object-cover shrink-0"
               />
               <div className="p-6">
                 <h3 className="font-semibold text-[16px] mb-0.5 flex flex-col">
