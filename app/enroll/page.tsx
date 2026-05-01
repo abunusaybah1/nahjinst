@@ -14,9 +14,7 @@ const EnrollPage = () => {
         Please complete the enrollment process below.
       </p>
 
-      {/* POPUP OVERLAY */}
       <EnrollClient />
-      {/* Animations */}
       <style>{`
         .animate-fadeIn {
           animation: fadeIn 0.5s ease forwards;

@@ -65,14 +65,12 @@ const ProgramsPage = () => {
         and discipline.
       </p>
 
-      {/* Programs (FLEX) */}
       <div className="flex flex-wrap gap-8 mb-10">
         {programs.map((p, index) => (
           <div
             key={index}
             className="bg-[#ebe1d1] p-6 rounded-xl shadow-md border border-[#d4c6b5] hover:shadow-lg transition hover:-translate-y-1 flex flex-col w-full md:w-[47%] lg:w-[30%]"
           >
-            {/* Icon + Title */}
             <div className="flex items-center gap-3 mb-3">
               <div className="bg-[#144727] text-[#ebe1d1] p-3 rounded-lg">
                 {p.icon}
@@ -80,10 +78,8 @@ const ProgramsPage = () => {
               <h2 className="text-xl font-semibold">{p.title}</h2>
             </div>
 
-            {/* Description */}
             <p className="text-[15px] leading-6 mb-4">{p.description}</p>
 
-            {/* Schedule */}
             <h3 className="font-medium mb-2 text-[15px]">Schedule:</h3>
             <ul className="list-disc pl-5 text-[14.5px] leading-6">
               {p.schedule.map((item, i) => (
@@ -94,9 +90,7 @@ const ProgramsPage = () => {
         ))}
       </div>
 
-      {/* Bottom Sections — Flexbox */}
       <div className="flex flex-wrap gap-8 mt-10">
-        {/* Class Timing */}
         <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
           <h2 className="text-2xl font-semibold mb-3">Class Timing</h2>
           <p className="leading-7 text-[15.5px]">
@@ -111,7 +105,6 @@ const ProgramsPage = () => {
           </p>
         </div>
 
-        {/* Teaching Methodology */}
         <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
           <h2 className="text-2xl font-semibold mb-3">Teaching Methodology</h2>
           <p className="leading-7 text-[15.5px] mb-3">
@@ -128,7 +121,6 @@ const ProgramsPage = () => {
           </ul>
         </div>
 
-        {/* Fees & Enrollment */}
         <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
           <h2 className="text-2xl font-semibold mb-3">Fees and Enrollment</h2>
           <p className="leading-7 text-[15.5px] mb-4">
@@ -141,9 +133,12 @@ const ProgramsPage = () => {
             it, bi idhniLlāhi. Enrollment is open all year round, and students
             can join any class at their convenience.
           </p>
+        </div>
 
-          <h3 className="font-bold text-[16px]">Eligibility:</h3>
-          <p className="leading-7 text-[15.5px]">
+        <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
+          <h2 className="text-2xl font-semibold mb-3">Student Eligibility</h2>
+
+          <p className="leading-7 text-[15.5px] mb-4">
             Our classes are open to all age groups and academic levels. Students
             will choose their preferred class, and a brief test will be
             conducted to know the level of their prior knowledge.
@@ -151,7 +146,7 @@ const ProgramsPage = () => {
         </div>
       </div>
 
-      <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full mt-10">
+      {/* <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full mt-10">
         <p className=" leading-7 text-[15.5px] mb-5">
           Want to know the instructors you will be learning from at the
           institute? We should know that knowledge is a crucial part of our
@@ -164,7 +159,7 @@ const ProgramsPage = () => {
         >
           See instructors
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

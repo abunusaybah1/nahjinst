@@ -6,12 +6,9 @@ import Link from "next/dist/client/link";
 const AboutPage = () => {
   return (
     <div className="px-6 md:px-16 text-[#144727]">
-      {/* HEADER */}
       <h1 className="text-3xl md:text-4xl font-bold mb-4">
         An-Nahj Islamic Institute
       </h1>
-
-      {/* INTRO SECTION */}
 
       <p className="mb-4">
         Founded in early 2025, An-Nahj Islamic Institute was established with a
@@ -24,14 +21,11 @@ const AboutPage = () => {
         jurisprudence from anywhere.
       </p>
 
-      {/* WHAT MAKES AN-NAHJ DIFFERENT */}
-
       <h2 className="text-2xl mb-5 font-bold mt-12">
         What Makes An-Nahj Different?
       </h2>
 
       <div className="flex flex-col md:flex-row md:flex-wrap gap-5">
-        {/* Card 1 */}
         <div className="flex-1 min-w-62.5 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition">
           <h3 className="text-lg font-bold mb-2">Affordable & Accessible</h3>
           <p className="text-[15px] leading-6">
@@ -40,7 +34,6 @@ const AboutPage = () => {
           </p>
         </div>
 
-        {/* Card 2 */}
         <div className="flex-1 min-w-62.5 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition">
           <h3 className="text-lg font-bold mb-2">Flexible Structure</h3>
           <p className="text-[15px] leading-6">
@@ -49,7 +42,6 @@ const AboutPage = () => {
           </p>
         </div>
 
-        {/* Card 3 */}
         <div className="flex-1 min-w-62.5 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition">
           <h3 className="text-lg font-bold mb-2">Sound Creed & Manhaj</h3>
           <p className="text-[15px] leading-6">
@@ -58,7 +50,6 @@ const AboutPage = () => {
           </p>
         </div>
 
-        {/* Card 4 */}
         <div className="flex-1 min-w-62.5 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition">
           <h3 className="text-lg font-bold mb-2">Fully Online</h3>
           <p className="text-[15px] leading-6">
@@ -66,7 +57,6 @@ const AboutPage = () => {
           </p>
         </div>
 
-        {/* Card 5 */}
         <div className="flex-1 min-w-62.5 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition">
           <h3 className="text-lg font-bold mb-2">Discipline & Etiquettes</h3>
           <p className="text-[15px] leading-6">
@@ -75,10 +65,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-
-      {/* PROGRAMS SECTION */}
-
-      <h2 className="text-2xl mb-5 font-bold mt-12">Our Programs</h2>
+      {/* <h2 className="text-2xl mb-5 font-bold mt-12">Our Programs</h2>
 
       <p className="mb-6">
         At An-Nahj Islamic Institute, our structured programs are designed to
@@ -91,7 +78,7 @@ const AboutPage = () => {
         className="bg-[#144727] text-[#ebe1d1] py-2 px-3 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
       >
         Explore our programs
-      </Link>
+      </Link> */}
     </div>
   );
 };

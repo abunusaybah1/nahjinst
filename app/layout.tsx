@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "An-Nahj Islamic Institute",
   description:
-    " An-Nahj Islamic Institute is a non-profit organization dedicated to providing high-quality Islamic education and resources to individuals of all backgrounds. Our mission is to promote a deeper understanding of Islam and its teachings, while fostering a sense of community and spiritual growth among our students and followers.",
+    " An-Nahj Islamic Institute is an online Islamic institute dedicated to providing authentic Islamic education, focusing on Qur’an memorization, Arabic language, Hadith, and Fiqh. Our mission is to make learning accessible and engaging for students worldwide, fostering a deep connection with the teachings of Islam.",
 };
 
 export default function RootLayout({

@@ -15,7 +15,6 @@ const Header = () => {
       className="fixed top-0 w-full bg-[#ebe1d1] text-[#144727] py-3 shadow-sm z-1000"
     >
       <div className="flex justify-between items-center px-6 md:px-10">
-        {/* Logo */}
         <Image
           src="/images/logo1trans.png"
           alt="Logo"
@@ -25,7 +24,6 @@ const Header = () => {
           className="cursor-pointer"
         />
 
-        {/* Desktop Links */}
         <nav
           className="hidden md:flex gap-7 text-[15px]"
           aria-label="Main navigation"
@@ -62,15 +60,13 @@ const Header = () => {
           </Link>
         </nav>
 
-        {/* CTA Button */}
         <Link
           href="/enroll"
           className="hidden md:block bg-[#144727] text-[#ebe1d1] px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
         >
-          Enroll
+          Enroll Now
         </Link>
 
-        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden text-3xl hover:text-[#144710] hover:scale-120 transition cursor-pointer"
           onClick={() => setOpen(!open)}
@@ -79,11 +75,10 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-[#ebe1d1] px-6 mt-3 pb-5 border-t border-[#144727] py-3">
           <nav
-            className="flex flex-col gap-4 text-[16px]"
+            className="flex flex-col gap-4 text-[16px] items-center"
             aria-label="Mobile navigation"
           >
             <Link
@@ -122,13 +117,12 @@ const Header = () => {
               Contact
             </Link>
 
-            {/* Mobile CTA */}
             <Link
               href="/enroll"
               onClick={() => setOpen(false)}
-              className="bg-[#144727] text-[#ebe1d1] w-fit px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition"
+              className="w-full bg-[#144727] text-[#ebe1d1] text-center px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition"
             >
-              Enroll
+              Enroll Now
             </Link>
           </nav>
         </div>

@@ -24,7 +24,6 @@ const instructors = [
 const InstructorsPage = () => {
   return (
     <div className="px-6 md:px-16 text-[#144727]">
-      {/* Header */}
       <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Instructors</h1>
 
       <p className="text-[15.5px] md:w-2/3 leading-7 mb-10">
@@ -33,14 +32,12 @@ const InstructorsPage = () => {
         beneficial for every student.
       </p>
 
-      {/* Instructors */}
       <div className="flex flex-wrap gap-8">
         {instructors.map((inst, index) => (
           <div
             key={index}
             className="w-full md:w-[47%] lg:w-[30%] bg-[#ebe1d1] rounded-xl border border-[#d4c6b5] shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:-translate-y-1"
           >
-            {/* Image */}
             <div className="relative w-full h-60 overflow-hidden">
               <Image
                 src={inst.image}
@@ -51,7 +48,6 @@ const InstructorsPage = () => {
               />
             </div>
 
-            {/* Content */}
             <div className="p-5">
               <h2 className="text-xl font-semibold mb-1">{inst.name}</h2>
 
@@ -63,7 +59,6 @@ const InstructorsPage = () => {
         ))}
       </div>
 
-      {/* Closing Note */}
       <div className="mt-12 bg-[#ebe1d1] p-6 rounded-xl border border-[#d4c6b5]">
         <p className="text-[15.5px] leading-7">
           Bi idhniLlāhi, we are working towards introducing more instructors to
@@ -72,7 +67,7 @@ const InstructorsPage = () => {
         </p>
       </div>
 
-      <div className="mt-10 mb-16 bg-[#ebe1d1] p-6 rounded-xl border border-[#d4c6b5] ">
+      {/* <div className="mt-10 mb-16 bg-[#ebe1d1] p-6 rounded-xl border border-[#d4c6b5] ">
         <p className="text-[15.5px] leading-7 mb-6">
           Ready to take the bold step to join our community of learners? Upon
           joining An-Nahj Islamic Institute, you will be part of a supportive
@@ -84,7 +79,7 @@ const InstructorsPage = () => {
         >
           Enroll Now
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

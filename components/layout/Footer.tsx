@@ -10,7 +10,6 @@ const Footer = () => {
       className=" w-full bg-[#144727] text-[#ebe1d1] pt-10 pb-6 mt-10"
     >
       <div className="px-6 md:px-12 grid md:grid-cols-3 gap-10">
-        {/* Logo + Intro */}
         <div>
           <Image
             src="/images/logolighttrans.png"
@@ -28,7 +27,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="flex flex-col gap-2 text-sm">
@@ -50,13 +48,11 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      {/* Divider */}
       <div className="w-full border-t border-[#ebe1d13b] my-6"></div>
 
-      {/* Bottom */}
       <p className="text-center text-xs opacity-80">
-        © {new Date().getFullYear()} An-Nahj Islamic Institute. All rights
-        reserved.
+        <sup className="text-[12px]"> ©</sup> 2025 - {new Date().getFullYear()}{" "}
+        An-Nahj Islamic Institute. All rights reserved.
       </p>
     </footer>
   );
