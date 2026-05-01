@@ -175,7 +175,7 @@ const LandingPage = () => {
           Knowledge is a crucial part of our deen — know from whom you take it.
         </p>
 
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-6 sm:flex-row justify-start">
           {instructorsPreview.map((inst, i) => (
             <div
               key={i}
