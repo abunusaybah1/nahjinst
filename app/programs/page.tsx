@@ -18,8 +18,11 @@ const ProgramsPage = () => {
       description:
         "Qur’an memorization, revision, and Tajweed for learners of all levels.",
       schedule: [
-        "Memorization — Monday, Wednesday, Friday",
-        "Tajweed — Tuesday, Thursday",
+        "Qur’an memorization — Mondays and Wednesdays",
+        "Tajweed — Tuesdays and Thursdays in the Tajweed groups",
+        "Hadith — Saturdays by 9:00pm–9:30pm in the general discussion group",
+        "Murāja'ah — Saturdays & Sundays in the submission groups",
+        "Fiqh — Sundays via pre-recorded lessons in the general discussion group",
       ],
     },
     {
@@ -27,14 +30,24 @@ const ProgramsPage = () => {
       icon: <FaPenNib size={26} />,
       description:
         "Learn Arabic letters, pronunciation, letter joining, and how to read the Qur’an from scratch.",
-      schedule: ["Monday–Thursday"],
+      schedule: [
+        "Al-Bidāyah class — Mondays and Wednesdays by 9:30pm–11:00pm",
+        "Al-Bidāyah class — Tuesdays and Thursdays by 9:00pm–11:00pm",
+        "Hadith — Saturdays by 9:00pm–9:30pm in the general discussion group",
+        "Fiqh — Sundays via pre-recorded lessons in the general discussion group",
+      ],
     },
     {
       title: "Uthman Class",
       icon: <FaBookOpen size={26} />,
       description: "Learn Arabic, Nahw, Sarf, and Ta'beer.",
       schedule: [
-        "Monday (Arabic), Wednesday (Arabic), Friday (Nahw), Saturday (Sarf), and Sunday (Ta'beer)",
+        "Arabiyyah (Class 1 & 2) — Mondays and Wednesdays by 9:00pm–9:30pm",
+        "Hadith — Saturdays by 9:00pm–9:30pm in the general discussion group",
+        "Nahw (Class 2 only) — Fridays by 9:30pm–10:30pm on Telegram",
+        "Sarf (Class 2 only) — Saturdays by 9:00pm–10:00pm on Telegram",
+        "Ta'beer (Class 2 only) — Sundays by 9:00pm–10:00pm on Telegram",
+        "Fiqh — Sundays via pre-recorded lessons in the general discussion group",
       ],
     },
     {
@@ -123,25 +136,46 @@ const ProgramsPage = () => {
 
         <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
           <h2 className="text-2xl font-semibold mb-3">Fees and Enrollment</h2>
-          <p className="leading-7 text-[15.5px] mb-4">
-            Classes are greatly discounted, with students only having to pay a
-            {"  "}
-            <strong>₦3000 monthly commitment fee</strong>. This helps both
-            students and the institute stay disciplined and committed to the
-            program. Definitely, the reward for this knowledge is with Allah,
-            and we want to make it easy for everyone to join and benefit from
-            it, bi idhniLlāhi. Enrollment is open all year round, and students
-            can join any class at their convenience.
+          <p className="leading-7 text-[15.5px] mb-3">
+            Commitment fees are expected at the beginning of each month, with a
+            grace period of up to 10 days to make things easier for everyone.
+            This means students are paying in advance for the month&apos;s
+            learning. Any student who is unable to pay on or before the 10th
+            should communicate early without hesitation. This is not a
+            pay-after-learning arrangement; it is part of the agreement from the
+            start.
+          </p>
+          <p className="leading-7 text-[15.5px] mb-3">
+            Students are expected to participate in the required activities of
+            their class, as these sessions are important for progress and
+            discipline.
+          </p>
+          <p className="leading-7 text-[15.5px] mb-3">
+            From <strong>January 2027</strong>, the monthly commitment fee will
+            be <strong>₦4,000</strong> for regular students,
+            <strong> ₦5,000</strong> for the Live Qur&apos;an class, and
+            <strong> ₦6,000</strong> for personalized classes. Students may pay
+            more if they wish, but this is the approved structure effective from
+            January 2027.
+          </p>
+          <p className="leading-7 text-[15.5px] mb-0">
+            Enrollment remains open throughout the year, and students can join
+            at any time, bi idhniLlāhi.
           </p>
         </div>
 
         <div className="bg-[#ebe1d1] p-7 rounded-xl border border-[#d4c6b5] w-full md:w-[47%] lg:w-[30%]">
           <h2 className="text-2xl font-semibold mb-3">Student Eligibility</h2>
 
-          <p className="leading-7 text-[15.5px] mb-4">
+          <p className="leading-7 text-[15.5px] mb-3">
             Our classes are open to all age groups and academic levels. Students
-            will choose their preferred class, and a brief test will be
-            conducted to know the level of their prior knowledge.
+            choose their preferred class and complete a brief assessment to
+            determine their current level.
+          </p>
+          <p className="leading-7 text-[15.5px] mb-0">
+            A simple reminder: payments are due at the start of the month, with
+            a grace period until the 10th day, and students are expected to take
+            part in the required activities of their class.
           </p>
         </div>
       </div>
