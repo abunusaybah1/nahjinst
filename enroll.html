@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enroll | An-Nahj Islamic Institute</title>
+    <meta
+      name="description"
+      content="Enroll at An-Nahj Islamic Institute to start your journey in learning the Qur’an, Arabic, Hadith, and Fiqh. Please read our enrollment rules and regulations before proceeding."
+    />
+    <meta name="theme-color" content="#144727" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="js/tailwind.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-full flex flex-col">
+    <header
+      role="banner"
+      class="fixed top-0 w-full bg-[#ebe1d1] text-[#144727] py-3 shadow-sm z-1000"
+    >
+      <div class="flex justify-between items-center px-6 md:px-10">
+        <a href="index.html" aria-label="An-Nahj Islamic Institute home">
+          <img
+            src="images/logo1trans.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="cursor-pointer"
+          />
+        </a>
+
+        <nav
+          class="hidden md:flex gap-7 text-[15px]"
+          aria-label="Main navigation"
+        >
+          <a
+            href="index.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >About</a
+          >
+          <a
+            href="programs.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Programs</a
+          >
+          <a
+            href="instructors.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Instructors</a
+          >
+          <a
+            href="contact.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Contact</a
+          >
+        </nav>
+
+        <a
+          href="enroll.html"
+          class="hidden md:block bg-[#144727] text-[#ebe1d1] px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
+        >
+          Enroll Now
+        </a>
+
+        <button
+          id="menu-btn"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="md:hidden text-3xl hover:text-[#144710] hover:scale-120 transition cursor-pointer"
+        >
+          <span id="icon-open"
+            ><svg
+              aria-hidden="true"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path></svg
+          ></span>
+          <span id="icon-close" class="hidden"
+            ><svg
+              aria-hidden="true"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"
+              ></path></svg
+          ></span>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#ebe1d1] px-6 mt-3 pb-5 border-t border-[#144727] py-3"
+      >
+        <nav
+          class="flex flex-col gap-4 text-[16px] items-center"
+          aria-label="Mobile navigation"
+        >
+          <a
+            href="index.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >About</a
+          >
+          <a
+            href="programs.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Programs</a
+          >
+          <a
+            href="instructors.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Instructors</a
+          >
+          <a
+            href="contact.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Contact</a
+          >
+          <a
+            href="enroll.html"
+            class="w-full bg-[#144727] text-[#ebe1d1] text-center px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition"
+          >
+            Enroll Now
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="pt-28">
+      <main class="px-6 md:px-16 text-[#144727]">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">Enroll Now</h1>
+        <p class="text-[15.5px] leading-7">
+          Please complete the enrollment process below.
+        </p>
+      </main>
+
+      <div
+        id="rules-modal"
+        class="hidden fixed inset-0 bg-black/50 justify-center items-center z-50 animate-fadeIn"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="rules-title"
+      >
+        <div
+          class="bg-[#ebe1d1] text-[#144727] w-[90%] md:w-[60%] lg:w-[45%] max-h-[85vh] rounded-xl shadow-xl p-6 border border-[#d4c6b5] animate-scaleIn flex flex-col"
+        >
+          <h2 id="rules-title" class="text-2xl font-semibold text-center">
+            Rules &amp; Regulations
+          </h2>
+          <p class="text-center mb-4 text-sm opacity-70 font-bold">
+            Check and click on each rule to confirm you have read and understood it.
+          </p>
+          <hr class="mb-4 border-[#d4c6b5]" />
+
+          <div class="overflow-y-auto flex-1 pr-2 space-y-3" id="rules-list">
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >All students must be on the institute's community as all
+                lessons, materials, and instructions will be shared there.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Students must check the group regularly to stay updated with
+                classes and assignments, as well as necessary updates.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >The discussion groups are strictly for learning purposes and
+                assignments submission; unnecessary chats or unrelated posts are
+                not allowed.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Respect must be maintained towards teachers and fellow students
+                at all times.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Commitment fees are due at the beginning of each month, with a
+                grace period of the first 10 days. Fees are paid in advance for
+                that month's learning, not after.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Any payment that will not be made on or before the 10th day of
+                the month must be communicated to the director without
+                hesitation.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Payments made for a month will not be rolled over to the next
+                month unless the Director approves it under special
+                circumstances.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >All activities in your class are mandatory. Any student who
+                fails to participate in any of them (even just one) will be
+                penalized for inactivity.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Anyone who wishes to be absent for any particular period must
+                inform the instructor before absence.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Failure to give prior information before absence means you are
+                still obliged to make payment for the absence period.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >All study materials provided in the class must not be shared
+                outside the group without prior permission.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Fees once paid are non-refundable unless otherwise approved by
+                the Director.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Students who wish to withdraw should inform the administration
+                in advance.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Consistent inactivity for 3 days without notice will lead to
+                expulsion.</span
+              >
+            </label>
+            <label
+              class="flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition bg-white/40 border-[#d4c6b5]"
+            >
+              <input
+                type="checkbox"
+                class="rule-check mt-1 accent-[#144727] w-4 h-4 shrink-0"
+              />
+              <span class="text-[14.5px] leading-6"
+                >Any student who leaves the institute or its learning community without
+                approval from the director will NOT be accepted back.</span
+              >
+            </label>
+          </div>
+
+          <hr class="mt-4 border-[#d4c6b5]" />
+
+          <p class="text-center mt-3 text-sm opacity-70">
+            <span id="rules-count">0</span> of 15 rules confirmed
+          </p>
+
+          <button
+            id="rules-proceed"
+            type="button"
+            disabled
+            data-total="15"
+            class="w-full mt-4 py-3 rounded-md font-medium text-[#ebe1d1] transition bg-gray-400 cursor-not-allowed"
+          >
+            Confirm all 15 rules to proceed
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      role="contentinfo"
+      class="w-full bg-[#144727] text-[#ebe1d1] pt-10 pb-6 mt-10"
+    >
+      <div class="px-6 md:px-12 grid md:grid-cols-3 gap-10">
+        <div>
+          <img
+            src="images/logolighttrans.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="mb-3 cursor-pointer"
+          />
+          <h2 class="text-xl font-semibold mb-2">An-Nahj Islamic Institute</h2>
+          <p class="text-sm leading-6">
+            Islam • Sunnah • Knowledge
+            <br />
+            
+            Spreading beneficial knowledge upon the Qur'an and authentic
+            Sunnah.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li>
+              <a href="programs.html" class="hover:underline">Programs</a>
+            </li>
+            <li>
+              <a href="instructors.html" class="hover:underline">Instructors</a>
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full border-t border-[#ebe1d13b] my-6"></div>
+
+      <p class="text-center text-xs opacity-80">
+        <sup class="text-[12px]"> ©</sup> 2025 - <span id="year">2026</span>
+        An-Nahj Islamic Institute. All rights reserved.
+      </p>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

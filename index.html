@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>An-Nahj Islamic Institute</title>
+    <meta
+      name="description"
+      content="An-Nahj Islamic Institute is an online Islamic institute dedicated to providing authentic Islamic education, focusing on Qur’an memorization, Arabic language, Hadith, and Fiqh. Our mission is to make learning accessible and engaging for students worldwide, fostering a deep connection with the teachings of Islam."
+    />
+    <meta name="theme-color" content="#144727" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="js/tailwind.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-full flex flex-col">
+    <header
+      role="banner"
+      class="fixed top-0 w-full bg-[#ebe1d1] text-[#144727] py-3 shadow-sm z-1000"
+    >
+      <div class="flex justify-between items-center px-6 md:px-10">
+        <a href="index.html" aria-label="An-Nahj Islamic Institute home">
+          <img
+            src="images/logo1trans.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="cursor-pointer"
+          />
+        </a>
+
+        <nav
+          class="hidden md:flex gap-7 text-[15px]"
+          aria-label="Main navigation"
+        >
+          <a
+            href="index.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >About</a
+          >
+          <a
+            href="programs.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Programs</a
+          >
+          <a
+            href="instructors.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Instructors</a
+          >
+          <a
+            href="contact.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Contact</a
+          >
+        </nav>
+
+        <a
+          href="enroll.html"
+          class="hidden md:block bg-[#144727] text-[#ebe1d1] px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition cursor-pointer"
+        >
+          Enroll Now
+        </a>
+
+        <button
+          id="menu-btn"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="md:hidden text-3xl hover:text-[#144710] hover:scale-120 transition cursor-pointer"
+        >
+          <span id="icon-open"
+            ><svg
+              aria-hidden="true"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path></svg
+          ></span>
+          <span id="icon-close" class="hidden"
+            ><svg
+              aria-hidden="true"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"
+              ></path></svg
+          ></span>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#ebe1d1] px-6 mt-3 pb-5 border-t border-[#144727] py-3"
+      >
+        <nav
+          class="flex flex-col gap-4 text-[16px] items-center"
+          aria-label="Mobile navigation"
+        >
+          <a
+            href="index.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >About</a
+          >
+          <a
+            href="programs.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Programs</a
+          >
+          <a
+            href="instructors.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Instructors</a
+          >
+          <a
+            href="contact.html"
+            class="hover:text-[#144710] hover:underline hover:scale-105 transition"
+            >Contact</a
+          >
+          <a
+            href="enroll.html"
+            class="w-full bg-[#144727] text-[#ebe1d1] text-center px-4 py-2 rounded-md font-medium hover:bg-[#144710] hover:scale-105 transition"
+          >
+            Enroll Now
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="pt-28">
+      <main class="text-[#144727]">
+        <section
+          class="h-[calc(100vh-110px)] flex flex-col gap-6 items-center justify-center text-center px-4 py-24 md:py-32"
+        >
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
+            An-Nahj Islamic Institute
+          </h1>
+          <h4 class="text-xl md:text-2xl font-semibold opacity-80">
+            Islam. Sunnah. Knowledge.
+          </h4>
+          <p class="text-[15.5px] leading-7 max-w-xl opacity-90">
+            Dedicated to spreading beneficial knowledge upon the Qur'an and
+            authentic Sunnah, according to the understanding of the pious
+            predecessors.
+          </p>
+          <div class="flex flex-wrap gap-3 justify-center mt-2">
+            <!-- <a href="enroll.html" class="bg-[#144727] text-[#ebe1d1] px-6 py-3 rounded-md font-medium hover:bg-[#0f3a1f] hover:scale-105 transition">
+              Enroll Now
+            </a> -->
+            <a
+              href="#about"
+              class="border border-[#144727] text-[#144727] px-6 py-3 rounded-md font-medium hover:bg-[#144727] hover:text-[#ebe1d1] transition"
+            >
+              Learn More
+            </a>
+          </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-16 bg-[#ebe1d1]" id="about">
+          <h2 class="text-2xl md:text-3xl font-bold mb-2">Why An-Nahj?</h2>
+          <p class="text-[15px] opacity-75 mb-8">
+            What makes us different from the rest.
+          </p>
+
+          <div class="flex flex-wrap gap-5">
+            <div
+              class="flex-1 min-w-55 bg-white/60 p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition"
+            >
+              <h3 class="text-lg font-bold mb-2">Affordable</h3>
+              <p class="text-[14.5px] leading-6 opacity-85">
+                Commitment fees are pocket friendly, making it very much
+                affordable. We believe that beneficial knowledge should be
+                accessible to all, regardless of their financial status.
+              </p>
+            </div>
+            <div
+              class="flex-1 min-w-55 bg-white/60 p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition"
+            >
+              <h3 class="text-lg font-bold mb-2">Flexible</h3>
+              <p class="text-[14.5px] leading-6 opacity-85">
+                Classes run in the evenings/nights, from Maghrib downwards,
+                perfect for students and workers. We also offer a variety of
+                personalized learning options to suit your availability.
+              </p>
+            </div>
+            <div
+              class="flex-1 min-w-55 bg-white/60 p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition"
+            >
+              <h3 class="text-lg font-bold mb-2">Sound Manhaj</h3>
+              <p class="text-[14.5px] leading-6 opacity-85">
+                Curriculum grounded in the Qur'an and Sunnah upon the way of the
+                pious predecessors. Knowledge is the key to understanding Islam,
+                and must be sought inline with the methodology of the pious
+                predecessors.
+              </p>
+            </div>
+            <div
+              class="flex-1 min-w-55 bg-white/60 p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md transition"
+            >
+              <h3 class="text-lg font-bold mb-2">Fully Online</h3>
+              <p class="text-[14.5px] leading-6 opacity-85">
+                Learn from anywhere in the world via the digital tools you are
+                already familiar with. Being far from a physical location is no
+                longer a barrier to accessing Islamic quality education.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a
+              href="about.html"
+              class="text-[#144727] font-semibold underline underline-offset-4 hover:opacity-70 transition text-[15px]"
+            >
+              Read the full story →
+            </a>
+          </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-2">Our Programs</h2>
+          <p class="text-[15px] opacity-75 mb-8 max-w-xl">
+            Structured classes in Qur'an, Arabic, Hadith, and Fiqh — all
+            conducted online in the evenings/nights, from Maghrib downwards,
+            perfect for students and workers. We also offer a variety of
+            personalized learning options to suit your availability.
+          </p>
+
+          <div class="flex flex-wrap gap-5">
+            <div
+              class="flex-1 min-w-50 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md hover:-translate-y-1 transition"
+            >
+              <div
+                class="bg-[#144727] text-[#ebe1d1] w-fit p-2.5 rounded-lg mb-3"
+              >
+                <svg
+                  aria-hidden="true"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  height="22"
+                  width="22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M448 358.4V25.6c0-16-9.6-25.6-25.6-25.6H96C41.6 0 0 41.6 0 96v320c0 54.4 41.6 96 96 96h326.4c12.8 0 25.6-9.6 25.6-25.6v-16c0-6.4-3.2-12.8-9.6-19.2-3.2-16-3.2-60.8 0-73.6 6.4-3.2 9.6-9.6 9.6-19.2zM301.08 145.82c.6-1.21 1.76-1.82 2.92-1.82s2.32.61 2.92 1.82l11.18 22.65 25 3.63c2.67.39 3.74 3.67 1.81 5.56l-18.09 17.63 4.27 24.89c.36 2.11-1.31 3.82-3.21 3.82-.5 0-1.02-.12-1.52-.38L304 211.87l-22.36 11.75c-.5.26-1.02.38-1.52.38-1.9 0-3.57-1.71-3.21-3.82l4.27-24.89-18.09-17.63c-1.94-1.89-.87-5.17 1.81-5.56l24.99-3.63 11.19-22.65zm-57.89-69.01c13.67 0 27.26 2.49 40.38 7.41a6.775 6.775 0 1 1-2.38 13.12c-.67 0-3.09-.21-4.13-.21-52.31 0-94.86 42.55-94.86 94.86 0 52.3 42.55 94.86 94.86 94.86 1.03 0 3.48-.21 4.13-.21 3.93 0 6.8 3.14 6.8 6.78 0 2.98-1.94 5.51-4.62 6.42-13.07 4.87-26.59 7.34-40.19 7.34C179.67 307.19 128 255.51 128 192c0-63.52 51.67-115.19 115.19-115.19zM380.8 448H96c-19.2 0-32-12.8-32-32s16-32 32-32h284.8v64z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-[15.5px] mb-1">Abubakar Class</h3>
+              <p class="text-[14px] leading-6 opacity-80">
+                Qur'an memorization, revision, and Tajweed for all levels.
+              </p>
+            </div>
+            <div
+              class="flex-1 min-w-50 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md hover:-translate-y-1 transition"
+            >
+              <div
+                class="bg-[#144727] text-[#ebe1d1] w-fit p-2.5 rounded-lg mb-3"
+              >
+                <svg
+                  aria-hidden="true"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="22"
+                  width="22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M136.6 138.79a64.003 64.003 0 0 0-43.31 41.35L0 460l14.69 14.69L164.8 324.58c-2.99-6.26-4.8-13.18-4.8-20.58 0-26.51 21.49-48 48-48s48 21.49 48 48-21.49 48-48 48c-7.4 0-14.32-1.81-20.58-4.8L37.31 497.31 52 512l279.86-93.29a64.003 64.003 0 0 0 41.35-43.31L416 224 288 96l-151.4 42.79zm361.34-64.62l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.75 18.75-49.15 0-67.91z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-[15.5px] mb-1">Umar Class</h3>
+              <p class="text-[14px] leading-6 opacity-80">
+                Arabic Reading and Writing Course. Arabic letters,
+                pronunciation, and reading the Qur'an from scratch.
+              </p>
+            </div>
+            <div
+              class="flex-1 min-w-50 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md hover:-translate-y-1 transition"
+            >
+              <div
+                class="bg-[#144727] text-[#ebe1d1] w-fit p-2.5 rounded-lg mb-3"
+              >
+                <svg
+                  aria-hidden="true"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 576 512"
+                  height="22"
+                  width="22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-[15.5px] mb-1">Uthman Class</h3>
+              <p class="text-[14px] leading-6 opacity-80">
+                Arabic Language Course (Arabic, Nahw, Sarf, and Ta'beer).
+              </p>
+            </div>
+            <div
+              class="flex-1 min-w-50 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md hover:-translate-y-1 transition"
+            >
+              <div
+                class="bg-[#144727] text-[#ebe1d1] w-fit p-2.5 rounded-lg mb-3"
+              >
+                <svg
+                  aria-hidden="true"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 640 512"
+                  height="22"
+                  width="22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-[15.5px] mb-1">
+                General Weekend Class
+              </h3>
+              <p class="text-[14px] leading-6 opacity-80">
+                Hadith memorization and explanation every weekend.
+              </p>
+            </div>
+            <div
+              class="flex-1 min-w-50 bg-[#ebe1d1] p-5 rounded-xl border border-[#d4c6b5] hover:shadow-md hover:-translate-y-1 transition"
+            >
+              <div
+                class="bg-[#144727] text-[#ebe1d1] w-fit p-2.5 rounded-lg mb-3"
+              >
+                <svg
+                  aria-hidden="true"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="22"
+                  width="22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4z"></path>
+                  <path
+                    d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-5.99 13c-.59 0-1.05-.47-1.05-1.05 0-.59.47-1.04 1.05-1.04.59 0 1.04.45 1.04 1.04-.01.58-.45 1.05-1.04 1.05m2.5-6.17c-.63.93-1.23 1.21-1.56 1.81-.13.24-.18.4-.18 1.18h-1.52c0-.41-.06-1.08.26-1.65.41-.73 1.18-1.16 1.63-1.8.48-.68.21-1.94-1.14-1.94-.88 0-1.32.67-1.5 1.23l-1.37-.57C11.51 5.96 12.52 5 13.99 5c1.23 0 2.08.56 2.51 1.26.37.61.58 1.73.01 2.57"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-[15.5px] mb-1">Weekly Quizzes and Revision</h3>
+              <p class="text-[14px] leading-6 opacity-80">
+                General weekly quizzes and revision sessions to solidify and strenghten what students have learned so far.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a
+              href="programs.html"
+              class="inline-block bg-[#144727] text-[#ebe1d1] py-2 px-4 rounded-md font-medium hover:bg-[#0f3a1f] hover:scale-105 transition text-[15px]"
+            >
+              See all programs →
+            </a>
+          </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-16 bg-[#ebe1d1]">
+          <h2 class="text-2xl md:text-3xl font-bold mb-2">
+            Meet Our Instructors
+          </h2>
+          <p class="text-[15px] opacity-75 mb-8 max-w-xl">
+            Knowledge is a crucial part of our deen — know from whom you take
+            it.
+          </p>
+
+          <div class="flex flex-wrap gap-6">
+            <div
+              class="flex flex-row items-center gap-5 min-w-60 bg-white/60 rounded-xl border border-[#d4c6b5] hover:shadow-md transition justify-start overflow-hidden"
+            >
+              <img
+                src="images/abunusaybah.png"
+                alt="Abu Nusaybah An-Nahjiy"
+                width="150"
+                height="200"
+                class="w-30 h-full min-h-35 object-cover shrink-0 self-stretch"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-[16px] mb-0.5 flex flex-col">
+                  Abu Nusaybah An-Nahjiy
+                </h3>
+                <p class="text-sm opacity-60 mb-3">
+                  Umar Class, Uthman Class & Tajweed
+                </p>
+                <p class="text-[14.5px] leading-6 opacity-85 max-w-md">
+                  Years of experience teaching Qur'an, Tajweed, Arabic, Hadith,
+                  Fiqh, Nahw, and Sarf — virtually and physically.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center gap-5 min-w-60 bg-white/60 rounded-xl border border-[#d4c6b5] hover:shadow-md transition justify-start overflow-hidden"
+            >
+              <img
+                src="images/abuhaneefah.png"
+                alt="Abu Haneefah"
+                width="150"
+                height="200"
+                class="w-30 h-full min-h-35 object-cover shrink-0 self-stretch"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-[16px] mb-0.5 flex flex-col">
+                  Abu Haneefah
+                </h3>
+                <p class="text-sm opacity-60 mb-3">Abubakar Class (Qur'an)</p>
+                <p class="text-[14.5px] leading-6 opacity-85 max-w-md">
+                  An experienced and eloquent reciter known for making Qur'an
+                  learning easy and accessible.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a
+              href="instructors.html"
+              class="text-[#144727] font-semibold underline underline-offset-4 hover:opacity-70 transition text-[15px]"
+            >
+              See all instructors →
+            </a>
+          </div>
+        </section>
+
+        <section
+          class="px-6 md:px-16 py-20 text-center flex flex-col items-center gap-5"
+        >
+          <h2 class="text-2xl md:text-3xl font-bold max-w-xl">
+            Ready to Take the Step?
+          </h2>
+          <p class="text-[15.5px] leading-7 max-w-lg opacity-85">
+            Join our growing community of learners. Enrollment is always open for new
+            students to join our institute. Click the enroll button to get
+            started.
+          </p>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <a
+              href="enroll.html"
+              class="bg-[#144727] text-[#ebe1d1] px-6 py-3 rounded-md font-medium hover:bg-[#0f3a1f] hover:scale-105 transition"
+            >
+              Enroll Now
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer
+      role="contentinfo"
+      class="w-full bg-[#144727] text-[#ebe1d1] pt-10 pb-6 mt-10"
+    >
+      <div class="px-6 md:px-12 grid md:grid-cols-3 gap-10">
+        <div>
+          <img
+            src="images/logolighttrans.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="mb-3 cursor-pointer"
+          />
+          <h2 class="text-xl font-semibold mb-2">An-Nahj Islamic Institute</h2>
+          <p class="text-sm leading-6">
+            Islam • Sunnah • Knowledge
+            <br />
+            
+            Spreading beneficial knowledge upon the Qur'an and authentic
+            Sunnah.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li>
+              <a href="programs.html" class="hover:underline">Programs</a>
+            </li>
+            <li>
+              <a href="instructors.html" class="hover:underline">Instructors</a>
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full border-t border-[#ebe1d13b] my-6"></div>
+
+      <p class="text-center text-xs opacity-80">
+        <sup class="text-[12px]"> ©</sup> 2025 - <span id="year">2026</span>
+        An-Nahj Islamic Institute. All rights reserved.
+      </p>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
